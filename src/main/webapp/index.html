@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+</head>
+<body>
+    <h2>Add Student</h2>
+    <form action="/studentsServlet/AddNewStudentsServlet" method="post">
+        <label for="number">Number:</label>
+        <input type="number" id="number" name="number" required><br>
+
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname" required><br>
+
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstname" required><br>
+
+        <button type="submit" name="action" value="add">Add Student</button>
+    </form>
+
+    <h2>View All Students</h2>
+    <form action="/studentsServlet/AddNewStudentsServlet" method="post">
+        <button type="submit" name="action" value="view">View All Students</button>
+    </form>
+
+    <h2>Update Student</h2>
+    <form action="/studentsServlet/AddNewStudentsServlet" method="post">
+        <label for="updateNumber">Number:</label>
+        <input type="number" id="updateNumber" name="number" required><br>
+
+        <label for="updateLastName">Last Name:</label>
+        <input type="text" id="updateLastName" name="lastname" required><br>
+
+        <label for="updateFirstName">First Name:</label>
+        <input type="text" id="updateFirstName" name="firstname" required><br>
+
+        <button type="submit" name="action" value="update">Update Student</button>
+    </form>
+
+    <h2>Delete Student</h2>
+    <form action="/studentsServlet/AddNewStudentsServlet" method="post">
+        <label for="deleteNumber">Number:</label>
+        <input type="number" id="deleteNumber" name="number" required><br>
+
+        <button type="submit" name="action" value="delete">Delete Student</button>
+    </form>
+
+</body>
+</html>
